@@ -6,6 +6,14 @@ The organizer is **one Google Spreadsheet named `Kai-RE Organizer`**, living ins
 
 You create all of this during onboarding (see `skills/onboard.md`). If any piece is missing when you go to use it, create it — don't fail silently.
 
+### Creating & writing the spreadsheet (implementation note)
+
+The organizer must end up as a **real Google Sheet in the user's Drive**, never a local file left on the machine. Use the host's Google Sheets/Drive tools to write and read it (create/import the spreadsheet, then read a range and batch-update ranges).
+
+- **Prefer the host's spreadsheet tools** for creating and populating the sheet (e.g. importing a spreadsheet into Drive, then batch-updating ranges). Read it back after writing (safety-spine rule 3).
+- **Don't assume a plain `python3` has spreadsheet libraries.** The *system* Python usually has **no `openpyxl`**, so a bare `import openpyxl` fails with `ModuleNotFoundError`. If you must build the workbook in code before importing it, first load the workspace/runtime that actually provides those libraries — don't burn a turn on the system-Python dead-end.
+- If a piece already exists (folder, spreadsheet, a tab), **adopt it** rather than creating a duplicate.
+
 ---
 
 ## 1. The Drive layout

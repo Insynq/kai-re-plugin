@@ -19,6 +19,7 @@ None of this changes the safety spine in `AGENTS.md`: anything that reaches anot
 A transaction/secondary calendar is addressed by its **calendar ID**, not by the name a person sees ("Kai-RE Deadlines"). If you try to write using the display name, the event won't land where you expect.
 
 - Resolve name → ID with `list_calendars`, then use that ID to create or update events.
+- **The ID must be `primary` or an email-like address containing `@`** (a secondary calendar's ID ends in `@group.calendar.google.com`). Some tools hand back an **opaque/base64-looking token** for a calendar — passing that directly to a read/write call fails with "calendar_id must be 'primary' or an email-like Google Calendar ID containing '@'". If the value you have has no `@`, it isn't a usable calendar ID: get the email-like form, or fall back to `primary`. Store the email-like ID (the one with `@`), never the encoded token.
 - Store the resolved ID in the `Meta` tab (`deadlines_calendar_id`, and `task_calendar_id` if the user surfaces tasks) so you don't re-discover it every session.
 - **Kai cannot create a calendar.** The user creates the transaction calendar in Google Calendar themselves; Kai's job is to capture its ID once and reuse it.
 
