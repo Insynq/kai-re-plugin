@@ -14,7 +14,7 @@ Paste these two lines into Claude Code:
 
 ```
 /plugin marketplace add insynq/kai-re-plugin
-/plugin install kai-re@kai-re-plugin
+/plugin install kai-re@insynq
 ```
 
 Then just talk to Kai — e.g. *"help me get set up"*, *"catch me up"*, or *"process the Birch Court contract."*
@@ -23,7 +23,7 @@ Then just talk to Kai — e.g. *"help me get set up"*, *"catch me up"*, or *"pro
 
 ```
 codex plugin marketplace add insynq/kai-re-plugin
-codex plugin add kai-re@kai-re-plugin
+codex plugin add kai-re@insynq
 ```
 
 Installed plugins are enabled by default. You can view/toggle them in the `codex /plugins` browser (Space to toggle) or in `~/.codex/config.toml`. Restart Codex after changes.
@@ -72,7 +72,7 @@ A `SessionStart` hook loads `AGENTS.md` into context at the start of every sessi
 The owner ships updates by pushing to this repo and bumping the `version` in the manifests.
 
 - **Claude Code:** `/plugin marketplace update` then `/plugin update kai-re`
-- **Codex:** `codex plugin marketplace upgrade` then `codex plugin add kai-re@kai-re-plugin`
+- **Codex:** `codex plugin marketplace upgrade` then `codex plugin add kai-re@insynq`
 
 ---
 
