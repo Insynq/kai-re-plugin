@@ -49,7 +49,7 @@ Rules that apply to every lane:
 
 ### 2. Route new contracts to the contract-reading skill
 
-For each genuine new or updated contract the contracts lane found, hand off to `skills/process-contract.md`. Because you can't pull the attachment yourself, **remind the user to download the PDF** — to their Downloads folder or straight into the deal's folder inside "Kai-RE" — and tell them which property it's for. Read the complete document chain (contract + any counterproposal + amendments, newest wins per field) before anything gets written to price or date fields.
+For each genuine new or updated contract the contracts lane found, hand off to `skills/process-contract/SKILL.md`. Because you can't pull the attachment yourself, **remind the user to download the PDF** — to their Downloads folder or straight into the deal's folder inside "Kai-RE" — and tell them which property it's for. Read the complete document chain (contract + any counterproposal + amendments, newest wins per field) before anything gets written to price or date fields.
 
 ### 3. Deadline ladder sweep
 

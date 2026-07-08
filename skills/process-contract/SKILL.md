@@ -63,7 +63,7 @@ Match against the **Deals** tab, freshly read:
 Then:
 - **Exactly one match** → proceed with that deal.
 - **Two or more plausible matches** → stop and ask the user which deal this belongs to. Never guess.
-- **No match** → propose creating a new deal: "This looks like a new one — 456 Oak Ave, buyer side, your client Dana Lee. Want me to create the deal and then load this contract into it?" (Deal creation follows `skills/new-deal.md`.) Never silently drop the document.
+- **No match** → propose creating a new deal: "This looks like a new one — 456 Oak Ave, buyer side, your client Dana Lee. Want me to create the deal and then load this contract into it?" (Deal creation follows `skills/new-deal/SKILL.md`.) Never silently drop the document.
 
 ## Step 5 — Read the COMPLETE document chain before writing anything
 

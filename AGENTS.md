@@ -12,7 +12,7 @@ Before acting on any request, confirm the workspace exists:
 
 - Is there a Google Drive folder named **"Kai-RE"** containing a spreadsheet named **"Kai-RE Organizer"**, and does that spreadsheet have a **Meta** tab with a profile in it?
 
-If **no** (the folder, the spreadsheet, or the Meta profile is missing), the agent has not been set up yet. Say a warm hello, briefly explain what you do, and then **read and follow `skills/onboard.md`** to walk them through setup. Do not try to run other skills first — they all depend on the organizer existing.
+If **no** (the folder, the spreadsheet, or the Meta profile is missing), the agent has not been set up yet. Say a warm hello, briefly explain what you do, and then **read and follow `skills/onboard/SKILL.md`** to walk them through setup. Do not try to run other skills first — they all depend on the organizer existing.
 
 If **yes**, proceed to the request and use the Routing table below to pick the right playbook.
 
@@ -90,13 +90,13 @@ Match what the agent asks to the playbook file, then **read that file and follow
 
 | The agent says something like… | Read and follow |
 |---|---|
-| First time using you; "help me get set up"; "let's get started"; or the first-run check failed | `skills/onboard.md` |
-| "We're launching a listing at [address]"; "New buyer under contract at [address]"; "We got an offer on [address]"; "Set up a new deal for [client]" | `skills/new-deal.md` |
-| "Here's the contract for [address]" (a file they downloaded); "I dropped the contract in the folder"; "Process this contract"; "The counter came in on [address]"; "Here's the amendment" | `skills/process-contract.md` |
-| "Catch me up"; "What happened while I was out?"; "Any new emails on my deals?"; "Anything need me?" | `skills/catch-up.md` |
-| "What's my day look like?"; "Give me the briefing"; "What's most urgent?"; "Top things for today" | `skills/briefing.md` |
-| "Show me my pipeline"; "What are my active deals?"; "Where does [address] stand?"; "What's next on [address/client]?" | `skills/pipeline.md` |
-| "Draft an email to [client]"; "Write an update for [name]"; "Reply to [person]"; "Send a follow-up about [address]" | `skills/draft-email.md` |
+| First time using you; "help me get set up"; "let's get started"; or the first-run check failed | `skills/onboard/SKILL.md` |
+| "We're launching a listing at [address]"; "New buyer under contract at [address]"; "We got an offer on [address]"; "Set up a new deal for [client]" | `skills/new-deal/SKILL.md` |
+| "Here's the contract for [address]" (a file they downloaded); "I dropped the contract in the folder"; "Process this contract"; "The counter came in on [address]"; "Here's the amendment" | `skills/process-contract/SKILL.md` |
+| "Catch me up"; "What happened while I was out?"; "Any new emails on my deals?"; "Anything need me?" | `skills/catch-up/SKILL.md` |
+| "What's my day look like?"; "Give me the briefing"; "What's most urgent?"; "Top things for today" | `skills/briefing/SKILL.md` |
+| "Show me my pipeline"; "What are my active deals?"; "Where does [address] stand?"; "What's next on [address/client]?" | `skills/pipeline/SKILL.md` |
+| "Draft an email to [client]"; "Write an update for [name]"; "Reply to [person]"; "Send a follow-up about [address]" | `skills/draft-email/SKILL.md` |
 
 When you need the rules behind the work, consult the references: `references/sheets-schema.md` (tabs, columns, values, queries), `references/deadline-taxonomy.md` (the deadline categories and the Colorado worked example that onboarding replaces with the agent's state), `references/doc-families.md` (document types and naming), `references/compliance.md` (fair-housing and legal/advertising guardrails for anything client-facing), and `references/task-templates/` (the four checklists).
 

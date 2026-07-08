@@ -213,7 +213,7 @@ Read the saved preferences back in one plain line so they know they took.
 
 For each active deal, you need the real contract. **You cannot pull attachments from email.** Ask the user to download each deal's contract (from their email or their e-signature platform) into their Downloads folder or the deal's folder inside `Kai-RE`.
 
-For each downloaded contract, follow **`skills/process-contract.md`** end to end: read the full document chain, extract terms/deadlines/parties, present the confirm table, and on the user's yes write the Deals updates, Deadlines rows + Calendar events (on the deadlines calendar you set up in Step 11), and file the PDF to the deal's Drive subfolder (capturing the real file id).
+For each downloaded contract, follow **`skills/process-contract/SKILL.md`** end to end: read the full document chain, extract terms/deadlines/parties, present the confirm table, and on the user's yes write the Deals updates, Deadlines rows + Calendar events (on the deadlines calendar you set up in Step 11), and file the PDF to the deal's Drive subfolder (capturing the real file id).
 
 **Save the deal's folder location once:** the first time you create (or find) a deal's document subfolder inside `Kai-RE`, write its real location into that deal's `drive_folder_id` column on the `Deals` row. That way you file straight into the right folder every session without re-finding it — the same idea as saving your main folder's location back in Step 7: look it up once, remember where it lives.
 
