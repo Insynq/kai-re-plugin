@@ -1,6 +1,6 @@
 {
   "name": "kai-re",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Kai-RE — a transaction-coordination assistant for solo real estate agents. Tracks deals, reads contracts, manages deadlines, files documents, and drafts client emails inside your own Google Workspace.",
   "author": {
     "name": "Insynq"
