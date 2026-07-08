@@ -60,6 +60,8 @@ Kai obeys four non-negotiable rules defined in [`AGENTS.md`](AGENTS.md):
 
 Plus deadline-safety rules: Kai never auto-closes a protective deadline (inspection, loan, appraisal, title objections) on its own.
 
+On Claude Code, a `SessionStart` hook automatically loads `AGENTS.md` into context at the start of every session (including after resume, clear, and compaction), so the safety rules are always in force.
+
 ---
 
 ## Updating
