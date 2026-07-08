@@ -23,15 +23,14 @@ Then just talk to Kai — e.g. *"help me get set up"*, *"catch me up"*, or *"pro
 
 ```
 codex plugin marketplace add insynq/kai-re-plugin
+codex plugin add kai-re@kai-re-plugin
 ```
 
-Then enable **kai-re** from `codex plugin`.
+Installed plugins are enabled by default. You can view/toggle them in the `codex /plugins` browser (Space to toggle) or in `~/.codex/config.toml`. Restart Codex after changes.
 
-On first use, Codex will ask you to **review and trust** Kai's session-start hook (the one that loads the safety rules). Approve it once — that's what lets Kai load its safety spine every session. You'll be asked again only if the hook definition changes.
+Kai bundles a session-start hook (`hooks/`) that loads its safety rules; on Codex, hooks are **trust-gated**, so approve it if prompted. For a guaranteed load regardless, copy the plugin's `AGENTS.md` to `~/.codex/AGENTS.md` — Codex always auto-loads that file.
 
-> **Optional hard guarantee (Codex):** because plugin hooks are trust-gated, if you want the safety rules loaded unconditionally on every session in every project, copy the plugin's `AGENTS.md` to `~/.codex/AGENTS.md`. Codex always loads that file automatically.
-
-> **Note:** Codex's plugin/marketplace system is new and its official Plugin Directory / self-serve publishing are still rolling out. If the marketplace command or manifest format has changed, check the current docs at https://developers.openai.com/codex/plugins — the plugin content (skills, references, safety rules) is unaffected either way.
+> **Note:** Codex's plugin system is new. If a command or manifest format has changed, check https://developers.openai.com/codex/plugins. To refresh the marketplace after an update, run `codex plugin marketplace upgrade`.
 
 ---
 
@@ -73,7 +72,7 @@ A `SessionStart` hook loads `AGENTS.md` into context at the start of every sessi
 The owner ships updates by pushing to this repo and bumping the `version` in the manifests.
 
 - **Claude Code:** `/plugin marketplace update` then `/plugin update kai-re`
-- **Codex:** re-run the marketplace refresh / update from `codex plugin`
+- **Codex:** `codex plugin marketplace upgrade` then `codex plugin add kai-re@kai-re-plugin`
 
 ---
 

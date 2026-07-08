@@ -4,7 +4,7 @@
   "plugins": [
     {
       "name": "kai-re",
-      "source": "./",
+      "source": "./plugins/kai-re",
       "description": "Kai-RE — a transaction-coordination assistant for solo real estate agents. Tracks deals, reads contracts, manages deadlines, files documents, and drafts client emails inside your own Google Workspace.",
       "category": "productivity"
     }
