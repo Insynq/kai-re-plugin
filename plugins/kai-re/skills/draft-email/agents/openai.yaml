@@ -1,0 +1,7 @@
+interface:
+  display_name: "Draft Email"
+  short_description: "Draft client & coordination emails"
+  default_prompt: "Use $draft-email to write an email to a client or coordinator for my review."
+
+policy:
+  allow_implicit_invocation: true

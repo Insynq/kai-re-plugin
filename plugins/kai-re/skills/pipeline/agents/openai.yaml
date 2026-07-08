@@ -1,0 +1,7 @@
+interface:
+  display_name: "Pipeline"
+  short_description: "See your deals, tasks & deadlines"
+  default_prompt: "Use $pipeline to show my active deals and what's next."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Process Contract"
+  short_description: "Pull dates & terms from a contract"
+  default_prompt: "Use $process-contract to read a saved contract and update the deal."
+
+policy:
+  allow_implicit_invocation: true

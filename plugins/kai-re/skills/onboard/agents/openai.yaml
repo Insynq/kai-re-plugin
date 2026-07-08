@@ -1,0 +1,7 @@
+interface:
+  display_name: "Get Set Up"
+  short_description: "First-run setup for Kai-RE"
+  default_prompt: "Use $onboard to set up Kai-RE with my Google account and deals."
+
+policy:
+  allow_implicit_invocation: true

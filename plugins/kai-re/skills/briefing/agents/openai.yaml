@@ -1,0 +1,7 @@
+interface:
+  display_name: "Morning Briefing"
+  short_description: "Top 3 things you need today"
+  default_prompt: "Use $briefing to see the top few things I need to handle today."
+
+policy:
+  allow_implicit_invocation: true

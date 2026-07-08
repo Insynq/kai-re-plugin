@@ -1,0 +1,7 @@
+interface:
+  display_name: "Catch Up"
+  short_description: "See what changed while you were away"
+  default_prompt: "Use $catch-up to bring my deals up to date and tell me what needs me."
+
+policy:
+  allow_implicit_invocation: true

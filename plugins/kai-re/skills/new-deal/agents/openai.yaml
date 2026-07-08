@@ -1,0 +1,7 @@
+interface:
+  display_name: "New Deal"
+  short_description: "Start tracking a new transaction"
+  default_prompt: "Use $new-deal to set up a new listing or under-contract deal."
+
+policy:
+  allow_implicit_invocation: true
