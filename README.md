@@ -27,6 +27,10 @@ codex plugin marketplace add insynq/kai-re-plugin
 
 Then enable **kai-re** from `codex plugin`.
 
+On first use, Codex will ask you to **review and trust** Kai's session-start hook (the one that loads the safety rules). Approve it once — that's what lets Kai load its safety spine every session. You'll be asked again only if the hook definition changes.
+
+> **Optional hard guarantee (Codex):** because plugin hooks are trust-gated, if you want the safety rules loaded unconditionally on every session in every project, copy the plugin's `AGENTS.md` to `~/.codex/AGENTS.md`. Codex always loads that file automatically.
+
 > **Note:** Codex's plugin/marketplace system is new and its official Plugin Directory / self-serve publishing are still rolling out. If the marketplace command or manifest format has changed, check the current docs at https://developers.openai.com/codex/plugins — the plugin content (skills, references, safety rules) is unaffected either way.
 
 ---
@@ -60,7 +64,7 @@ Kai obeys four non-negotiable rules defined in [`AGENTS.md`](AGENTS.md):
 
 Plus deadline-safety rules: Kai never auto-closes a protective deadline (inspection, loan, appraisal, title objections) on its own.
 
-On Claude Code, a `SessionStart` hook automatically loads `AGENTS.md` into context at the start of every session (including after resume, clear, and compaction), so the safety rules are always in force.
+A `SessionStart` hook loads `AGENTS.md` into context at the start of every session (including after resume, clear, and compaction), so the safety rules are always in force. On **Claude Code** this runs automatically; on **Codex** you approve the hook once (see install note above).
 
 ---
 

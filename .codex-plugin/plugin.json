@@ -5,5 +5,6 @@
   "author": "Insynq",
   "homepage": "https://github.com/insynq/kai-re-plugin",
   "license": "UNLICENSED",
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks.json"
 }

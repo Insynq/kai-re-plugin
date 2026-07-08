@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cat ${CLAUDE_PLUGIN_ROOT}/AGENTS.md"
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT:-$PLUGIN_ROOT}/AGENTS.md\""
           }
         ]
       },
@@ -15,7 +15,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cat ${CLAUDE_PLUGIN_ROOT}/AGENTS.md"
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT:-$PLUGIN_ROOT}/AGENTS.md\""
           }
         ]
       },
@@ -24,7 +24,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cat ${CLAUDE_PLUGIN_ROOT}/AGENTS.md"
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT:-$PLUGIN_ROOT}/AGENTS.md\""
           }
         ]
       },
@@ -33,7 +33,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cat ${CLAUDE_PLUGIN_ROOT}/AGENTS.md"
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT:-$PLUGIN_ROOT}/AGENTS.md\""
           }
         ]
       }
