@@ -1,7 +1,6 @@
 ---
 name: catch-up
-description: Session sweep — bring the Kai-RE Organizer up to date with what happened while the user was away, then hand them a short decision-first digest. Reads email, the spreadsheet, and the calendar; writes internal captures freely (flagged for review) and never sends or invites without an explicit yes.
-when-to-use: The user says "catch me up", "what did I miss?", "any new contracts?", "run the sweep", or opens a session after time away.
+description: Session sweep — bring the Kai-RE Organizer up to date with what happened while the user was away, then hand them a short decision-first digest. Reads email, the spreadsheet, and the calendar; writes internal captures freely (flagged for review) and never sends or invites without an explicit yes. Use when the user says "catch me up", "what did I miss?", "any new contracts?", "run the sweep", or opens a session after time away.
 ---
 
 # Catch-Up — the session sweep

@@ -1,7 +1,6 @@
 ---
 name: draft-email
-description: Draft client and coordination emails — new-lead first contact, status updates, deadline-coordination notes, review requests, referral thank-yous — always draft-and-confirm, never send without an explicit yes.
-user-invokable: true
+description: Draft client and coordination emails — new-lead first contact, status updates, deadline-coordination notes, review requests, referral thank-yous — always draft-and-confirm, never send without an explicit yes. Use when the user asks to write, send, follow up on, or reply to an email to a client, lender, title company, co-op agent, or lead.
 ---
 
 # Draft Email

@@ -1,7 +1,6 @@
 ---
 name: briefing
-description: The morning briefing — a very short, decision-first rundown of the top 3 things that actually need the user today, pulled fresh from email, the calendar, and the Kai-RE Organizer. No headers, no counts, no telemetry. Read-only unless the user acts on an item.
-when-to-use: The user says "morning briefing", "what do I need to know today?", "give me the rundown", "anything today?", or starts their day.
+description: The morning briefing — a very short, decision-first rundown of the top 3 things that actually need the user today, pulled fresh from email, the calendar, and the Kai-RE Organizer. No headers, no counts, no telemetry. Read-only unless the user acts on an item. Use when the user says "morning briefing", "what do I need to know today?", "give me the rundown", "anything today?", or starts their day.
 ---
 
 # Morning Briefing
