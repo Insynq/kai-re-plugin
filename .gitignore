@@ -1,0 +1,9 @@
+# OS / editor cruft
+.DS_Store
+*.swp
+
+# Local scratch — never ship user data, credentials, or working files
+tmp/
+scratch/
+*.local
+.env
